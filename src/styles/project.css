@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+:root {
+    --main-Color : linear-gradient(to right, rgb(39, 52, 52), rgb(45, 75, 77));
+    --primaryColor: linear-gradient(to right, rgb(96, 102, 102), rgb(161, 194, 196));
+    --color: #1f1c2e;
+}
+
+body {
+    background-image: var(--primaryColor);
+    height: 100vh;
+}
+
+#container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+/* ***************Nav bar****************** */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 5%; */
+    padding: 0.5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 20rem;
+    background-image: var(--primaryColor);
+    box-shadow: 0 0 5px  black;
+}
+
+.navLeft {
+    display: flex;
+}
+
+.navLeft > .logoName{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+span {
+    font-style: italic;
+    
+}
+
+.navRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.navRight > button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navRight > button:hover {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 3px beige;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(161, 194, 196);
+    font-size: large;
+    font-weight: 600;
+}
+
+
+
+/* ************* Project Container ********************* */
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 1.7rem;
+    overflow: hidden;
+    background-color: beige;
+}
+
+
+/* *** today section *** */
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.projectAddList {
+    height: 2rem ;
+    display: flex;
+    justify-content: right;
+}
+
+.newProject {
+    height: 2rem;
+    border: none;
+    width: 7rem;
+    font-size: large;
+    font-weight: 700;
+    padding: 1px;
+    background-color: rgba(96, 102, 102,0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newProject:hover {
+    height: 2rem;
+    border: none;
+    width: 7rem;
+    font-size: large;
+    font-weight: 700;
+    padding: 1px;
+    background-color: beige;
+    box-shadow: 0 0 5px 5px rgba(96, 102, 102,0.8);
+    border-radius: 5px;
+    
+}
+
+.addProject {
+    background-color: rgba(96, 102, 102, 0.5);
+    border: 2px solid rgb(96, 102, 102);
+    position: absolute;
+    right: 2%;
+    left: 63rem;
+    bottom: 64%;
+    top: 17%;
+    border-radius: 10px;
+    padding: 10px;
+    
+    
+}
+
+.newProjectName {
+    width: 18rem;
+    height: 2rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: 500;
+    
+}
+
+.addProjectBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18rem;
+    margin: 10px;
+    
+}
+
+.addProjectBtn > button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    margin: 0.5rem;
+    /* overflow-y: scroll; */
+    gap: 0.4rem;
+    /* margin: 1rem auto; */
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 13rem;
+    width: 12rem;
+    background-color: rgba(96, 102, 102, 0.5);
+    border-radius: 10px;
+}
+
+.projectDiv {
+    width: 10rem;
+    height: 10rem;
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(96, 102, 102);
+}
+
+.projectName {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+

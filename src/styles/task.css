@@ -1,0 +1,158 @@
+
+.projectTaskSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+    gap: 1rem;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.projectTaskNav {
+    margin-top: 0.5rem;
+    height: 2rem ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectTaskNav > button{
+    width: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(96, 102, 102,0.8);
+}
+
+.projectTaskNav > button:hover {
+    background-color: beige;
+    box-shadow: 0 0 5px 5px rgba(96, 102, 102,0.8);
+}
+
+.taskProjectName {
+    align-self: center;
+    font-size: larger;
+    font-weight: 800;
+    border-bottom: 2px solid rgba(96, 102, 102,1);
+    width: 20rem;
+    text-align: center;
+    
+}
+
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 1rem auto;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    width: 40rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding: 2px;
+    gap: 0.5rem;
+    background-color: rgba(39, 52, 52,0.5);
+    border-radius: 5px;
+
+}
+.taskName {
+    width: 35rem;
+    height: 1.5rem;
+    padding-left: 5px;
+    border-radius: 5px;
+    text-align:start;
+    font-size: larger;
+    font-weight: 800;
+    background-color: rgba(96, 102, 102,0.5);
+    /* color: beige; */
+}
+
+#taskInputCheck {
+    appearance: none;
+    border: 2px solid black;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+#taskInputCheck:checked {
+    background-color:  rgb(133, 170, 172);
+}
+
+#taskDate{
+    width: 2rem;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#taskDate::-webkit-calendar-picker-indicator {
+    width: 7rem;
+    height: 1.5rem;
+    width: 2rem;
+    padding-left: 2px;
+    border: none;
+    background-color: rgba(39, 52, 52,0.5);
+}
+    
+#taskDate::-webkit-datetime-edit-fields-wrapper{
+    display: none;
+    
+}
+
+.taskDelete {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.addTask {
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    height: 2.5rem;
+    margin: 2rem auto;
+    background-color: rgba(39, 52, 52,0.5);
+    border-radius: 5px;
+    align-self: center;
+}
+.taskAddPlus {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 8px;
+    background-color: rgba(96, 102, 102,0.8);
+    border-radius: 5px;
+}
+
+.taskAddText {
+    width: 100%;
+    height: 1.5rem;
+    margin: 8px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: rgba(96, 102, 102,0.8);
+    font-weight: 500;
+    
+}
+
+.taskAddText::-webkit-input-placeholder{
+    color: beige;
+    font-style: italic;
+}
